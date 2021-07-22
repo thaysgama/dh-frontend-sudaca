@@ -23,7 +23,7 @@ input[type="checkbox"]:checked ~ nav {
   transform: translateX(61vw);
 }
 nav {
-  background-color: #540b0dea;
+  background-color: #540b0d85;
   width: 60vw;
   height: 550px;
   left: -61vw;
