@@ -28,7 +28,7 @@ h2 {
 
 .container-row {
   width: 93vw;
-  height: 300px;
+  height: 320px;
   overflow-y: hidden;
   overflow-x: scroll;
   display: grid;
@@ -99,6 +99,13 @@ h2 {
 
 .filme:active,
 .filme:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.botao:active,
+.botao:hover {
   opacity: 1;
   cursor: pointer;
   transform: scale(1.2);
