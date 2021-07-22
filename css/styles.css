@@ -14,6 +14,86 @@ body {
   background-color: black;
 }
 
+/* Menu */
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked ~ nav {
+  transform: translateX(61vw);
+}
+nav {
+  background-color: #540b0dea;
+  width: 60vw;
+  height: 100%;
+  left: -61vw;
+  position: absolute;
+  transition: all 0.5s;
+  z-index: 2;
+  margin-top: 20px;
+  padding-top: 15px;
+}
+ul {
+  position: absolute;
+  width: 100%;
+}
+a {
+  display: block;
+  color: white;
+  margin-left: 20px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+a:hover {
+  position: relative;
+  color: #ffc300;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+label {
+  padding: 1.5rem;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  margin-left: 2px;
+}
+.logo-login {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.logo-login > #logo {
+  width: 350px;
+  margin-left: 70px;
+  margin-top: 1rem;
+}
+
+.banner {
+  width: 100%;
+  height: 85%;
+}
+.login {
+  font-size: 14px;
+  margin: 15px;
+  padding: 5px 10px;
+}
+
+#busca {
+  margin: 15px 45px 0 15px;
+}
+
+hr {
+  margin: 20px 0 20px 0;
+  border: 1px solid rgba(102, 98, 98, 0.692);
+}
+.menu {
+  padding: 20px 10px;
+}
+
+/* Menu */
+
 main {
   width: 100%;
   height: auto;
@@ -22,7 +102,7 @@ main {
 
 h2 {
   text-align: left;
-  margin-left: 25px;
+  margin-left: 50px;
   color: #fff;
 }
 
@@ -103,11 +183,18 @@ h2 {
 .botao:hover {
   opacity: 1;
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.25);
 }
 
 .filme:hover {
   border: rgb(255, 155, 5) solid thin;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
 }
 
 /*Media screen and presentations*/
