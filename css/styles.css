@@ -9,6 +9,10 @@
   font-family: Helvetica, sans-serif;
 }
 
+html {
+  background-color: #540b0e;
+}
+
 body {
   height: auto;
   background-color: black;
@@ -23,9 +27,9 @@ input[type="checkbox"]:checked ~ nav {
   transform: translateX(61vw);
 }
 nav {
-  background-color: #540b0d85;
+  background-color: #540b0d6b;
   width: 60vw;
-  height: 550px;
+  height: 100%;
   left: -61vw;
   position: absolute;
   transition: all 0.5s;
@@ -62,6 +66,7 @@ label {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  background-color: #540b0e;
 }
 
 .logo-login > #logo {
