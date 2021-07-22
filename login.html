@@ -27,31 +27,51 @@
             <ul class="menu">
                 <li class="menu-item"><a href="#sobre">Sobre nós</a></li>
                 <li class="menu-item"><a href="#planos-container">Planos</a></li>
-                <li class="menu-item"><a href="#container">Login</a></li>
+                <li class="menu-item"><a href="#login-container">Login</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <div class="container" id="container">
-            <div class="fundo">
-                <div class="login">
-                    <form action="/login" method="POST">
-                        <label for="email">
-                            <span>Email</span>
-                            <input id="email" name="email" type="email" placeholder="email">
-                        </label>           
-                        <label>
-                            <span>Password</span>
-                            <input id="senha" name="senha" type="password">
-                        </label>           
-                        
-                        <button class="button">
-                            Sign up
+        <div class="fundo">
+        <div class="fundo-imagem">
+            <div class="login-container" id="login-container">
+                    <h2>Login</h2>
+                    <form action="">
+                        <div class="login-input">
+                            <input type="email" name="" id="email" placeholder="Digite seu email">
+                            <input type="password" name="" id="senha" placeholder="Digite sua senha">
+                        </div>
+                        <div class="salvar-senha">
+                            <span>
+                                <input type="checkbox" name="salvar-senha" id="salvar">
+                                <label for="salvar">Lembre de mim</label>
+                            </span>
+                            <span><a href="http://#" target="_blank" rel="noopener noreferrer">Precisa de ajuda?</a>
+                            </span>
+                        </div>
+                        <button type="submit">Entrar</button>
+                    </form>
+                    <div class="login-footer">
+                        <span>Ou entre com sua rede social</span>
+                        <div class="rede-social">
+                            <div class="rede-social facebook">
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                    Entre com seu facebook
+                                </a>
+                            </div>
+                            <div class="rede-social google">
+                                <a href="#">
+                                    <i class="fab fa-google"></i>
+                                    Entre com sua conta Google
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
         <div class="sobre" id="sobre">
             <div class="sobre-texto">
                 <h3>Sobre nós</h3>
