@@ -1,76 +1,122 @@
  * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Alegreya Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
+/* ---------------HEADER--------------------- */
 header {
+    position: fixed;
     top: 0px;
     width: 100%;
-    padding: 30px;    
+    padding: 30px 30px;    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(212, 26, 26);   
+    flex-wrap: wrap;
+    background-color: #F2F2F2; 
+    box-shadow: 0 2px 4px -1px #88898C;  
+}
+/*........... logo.............. */
+.logo-container {
+    width: 250px;
+}
+.logo {
+    width: 100%;
+    min-width: 150px;
+    align-items: center;
+}
+.logo:hover {
+    transform: scale(1.1);
+    transition: 1s; 
 }
 
-.logo {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 22px;
-    color: rgb(255, 251, 251);
-    letter-spacing: 1px;
-}
-.logo a img {
-    width: 50px;
-    /* padding-right: 30px;
-    color: blanchedalmond; */
+/*........... navegador............ */
+nav {
+    width: 350px;
 }
 .menu {
     display: flex;
     flex-direction: row;
-    margin-left: 75px;
     justify-content: space-between;
     list-style: none;
+    border-radius: 5px;
 }
-
 .menu-item {
-    padding: 0 15px;
+    padding: 0 15px;  
+    background-color:#BF2431 ;  
+    border-color: none;
+    border-radius: 1px;
 }
 .menu a {
     text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     color: rgb(255, 255, 255);
     letter-spacing: 1px;
 }
+.menu-item:hover {
+    transform: scale(1.2);
+    transition: 1s;
+    background-color:
+    #F29544;
+}
+.menu-item:active {         /*isso aqui não está funcionando, ver porque*/
+    transform: scale(1.3);
+}
 
+/*...........FORMULÁRIO............ */
+.container{
+    height: 100vh;
+    background: linear-gradient(45deg,  #9E2A2B 0%, #FFE033 100%);
+    
+}
+.fundo{
+    height: 100vh;
+    background: url(../img/latin-america-logo.svg);
+    background-size: 15%;
+    opacity: .1;
+    background-attachment: fixed;
+}
+
+/*........... SOBRE............ */
 .sobre{
     background-color: white;
     height: 100vh;
     padding: 15%;
     display: flex;
     align-items: center;
+    background-color: rgb(240, 240, 240);
 }
 
 .sobre h3{
-    font-size: 3em;
+    font-size: 3rem;
+    color: #540B0E;
 }
 
 .sobre p{
     line-height: 150%;
+    
 }
 
+.sobre-texto{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+/*........... PLANOS............ */
+
 .planos-container{
-    background: linear-gradient(45deg,#9E2A2B 0%,  rgb(0, 0, 0) 100%);
+    background: linear-gradient(45deg, #540B0E 0%, #9E2A2B 100%);
     height: 100vh;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    
 }
 
 .planos{
@@ -89,7 +135,7 @@ header {
 }
 
 .cabecalho{
-    font-size: 1.3em;
+    font-size: 1.3rem;
     text-align: center;
     align-items: center;
     display: flex;
@@ -97,7 +143,7 @@ header {
 }
 
 .cabecalho h4{
-    font-size: 0.6em;
+    font-size: 0.9rem;
 }
 
 .planos-container button{
@@ -114,12 +160,25 @@ header {
     bottom: 15%;
 }
 
+.planos-container button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color:#9E2A2B;
+    border: 2px solid white;
+    color: white;
+}
+
+.planos-container button:active {
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color:#540B0E;
+    border: 2px solid white;
+    color: white;
+}
+
 @media (min-width: 600px)and (max-width:1200px){
     .planos{
         margin: 0 500px;
-    }
-    .planos-container button{
-        display: block;
     }
 }
 @media (min-width:1200px){
@@ -132,7 +191,7 @@ header {
     }
     .sobre{
         background-image: url('../img/elderly-man-using-a-mobile-phone.jpg');
-        background-size: 115%;
+        background-size: cover;
     }
     .sobre-texto{
         margin-left: 60%;
@@ -182,3 +241,12 @@ button {
     font-weight: 500;
     line-height: 30px;
 } */
+
+footer {
+    width: 100%;
+    bottom: 0;
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#9E2A2B;    
+}

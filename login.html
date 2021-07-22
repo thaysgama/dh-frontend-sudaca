@@ -5,45 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style-login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script
+        src="https://kit.fontawesome.com/ecae119fbf.js"
+        crossorigin="anonymous"
+    ></script>
     <title>Sudaca - Login</title>
 </head>
 <body>
     
     <header>
-        <div class="logo">
-            <a href="">
-                <img src="./img/latin-america-logo.svg" alt="">
-                <h3>Sudaca</h3>
+        <div class="logo-container">
+            <a href="#">
+                <img src="./img/logo.png" alt="" class="logo">
             </a>
         </div>
         <nav>
             <ul class="menu">
-                <li class="menu-item"><a href="">Sobre nós</a></li>
-                <li class="menu-item"><a href="">Planos</a></li>
-                <li class="menu-item"><a href="">Login</a></li>
+                <li class="menu-item"><a href="#sobre">Sobre nós</a></li>
+                <li class="menu-item"><a href="#planos-container">Planos</a></li>
+                <li class="menu-item"><a href="#container">Login</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <div class="container">
-            <div class="login">
-                <form action="/login" method="POST">
-                    <label for="email">
-                        <span>Email</span>
-                        <input id="email" name="email" type="email" placeholder="email">
-                    </label>           
-                    <label>
-                        <span>Password</span>
-                        <input id="senha" name="senha" type="password">
-                    </label>           
-                    
-                    <button class="button">
-                        Sign up
+        <div class="container" id="container">
+            <div class="fundo">
+                <div class="login">
+                    <form action="/login" method="POST">
+                        <label for="email">
+                            <span>Email</span>
+                            <input id="email" name="email" type="email" placeholder="email">
+                        </label>           
+                        <label>
+                            <span>Password</span>
+                            <input id="senha" name="senha" type="password">
+                        </label>           
+                        
+                        <button class="button">
+                            Sign up
+                </div>
             </div>
         </div>
 
-        <div class="sobre">
+        <div class="sobre" id="sobre">
             <div class="sobre-texto">
                 <h3>Sobre nós</h3>
                 <br>
@@ -51,7 +59,7 @@
             </div>
         </div>
 
-        <div class="planos-container">
+        <div class="planos-container" id="planos-container">
             <div class="planos">
                 <div class="cabecalho">
                     <h3>Basic</h3>
@@ -99,7 +107,16 @@
     </main>
 
     <footer>
-        
+        <div>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+
+            <a href="#"><button>código de serviço</button></a>
+
+            <p>1997-2021 Sudaca Filmes, Inc.</p>
+        </div>
     </footer>
 </body>
 </html>
