@@ -17,7 +17,8 @@ header {
     align-items: center;
     flex-wrap: wrap;
     background-color: #F2F2F2; 
-    box-shadow: 0 2px 4px -1px #88898C;  
+    box-shadow: 0 2px 4px -1px #88898C; 
+    z-index: 1; 
 }
 /*........... logo.............. */
 .logo-container {
@@ -194,9 +195,9 @@ form [type="submit"]:hover {
 .sobre{
     background-color: white;
     height: 100vh;
-    padding: 15%;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: rgb(240, 240, 240);
 }
 
@@ -213,6 +214,7 @@ form [type="submit"]:hover {
 .sobre-texto{
     background-color: #fff;
     border-radius: 10px;
+    max-width: 90vw;
     padding: 40px;
 }
 
@@ -301,6 +303,7 @@ form [type="submit"]:hover {
     .sobre{
         background-image: url('../img/elderly-man-using-a-mobile-phone.jpg');
         background-size: cover;
+        padding: 15%;
     }
     .sobre-texto{
         margin-left: 60%;
