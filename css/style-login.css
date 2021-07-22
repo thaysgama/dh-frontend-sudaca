@@ -75,6 +75,7 @@ nav {
     background: linear-gradient(45deg,  #9E2A2B 0%, #FFE033 100%);
 }
 
+
 .fundo-imagem {
     height: 100vh;
     background: url(../img/latin-america-logo.svg);
@@ -83,11 +84,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: .1;
+    
 }
 
 .login-container {
-    opacity: ;
     background-color: rgba(255, 255, 255, 0.55);
     width: 320px;
     height: 60vh;
@@ -213,7 +213,7 @@ form [type="submit"]:hover {
 .sobre-texto{
     background-color: #fff;
     border-radius: 10px;
-    padding: 50px;
+    padding: 40px;
 }
 
 /*........... PLANOS............ */
