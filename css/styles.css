@@ -98,12 +98,7 @@ h2 {
 }
 
 .filme:active,
-.filme:hover {
-  opacity: 1;
-  cursor: pointer;
-  transform: scale(1.2);
-}
-
+.filme:hover,
 .botao:active,
 .botao:hover {
   opacity: 1;
