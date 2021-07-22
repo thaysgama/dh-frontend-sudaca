@@ -113,9 +113,12 @@ form {
     color: rgba(0, 0, 0, 0.7);
     width: 100%;
     margin-bottom: 0.3rem;
+    padding: 10px;
+    border-radius: 6px;
     display: flex;
     flex-direction: column;
 }
+
 .salvar-senha {
     font-size: 0.8rem;
     display: flex;
@@ -287,6 +290,75 @@ form [type="submit"]:hover {
     color: white;
 }
 
+
+
+/*---------------- FOOTER------------------- */
+footer {
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color:#292727;   
+    padding: 30px 30px; 
+}
+.footer-content {
+    max-width: 600px;
+}
+
+/* .............ícones............. */
+.icones-footer {
+    margin-bottom: 15px;
+}
+.icones-footer i {
+    color: rgb(138, 134, 134);
+    font-size: 2rem;
+    margin-right: 7px;
+}
+
+/* ............links de usuario.......... */
+.user-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: rgb(138, 134, 134);
+    margin-bottom: 15px;
+}
+.user-links > li {
+    list-style: none;
+    margin-bottom: 10px;
+    flex-basis: 30%;
+}
+.user-links > li > a {
+    text-decoration: none;
+    color: rgb(138, 134, 134);
+}
+.user-links > li > a:hover {
+    text-decoration: underline;
+}
+
+/* ...........botão.............. */
+.button-footer {
+    margin-bottom: 15px;
+    font-weight: bolder;
+    font-size: 1rem;
+    border: 1px solid rgb(138, 134, 134);
+    color:rgb(138, 134, 134);
+    background-color: inherit;
+    padding: 5px;
+}
+.button-footer:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+/* ................p................. */
+.footer-content > p {
+    color: rgb(138, 134, 134);
+
+}
+
+
+
 @media (min-width: 600px)and (max-width:1200px){
     .planos{
         margin: 0 500px;
@@ -310,12 +382,14 @@ form [type="submit"]:hover {
     }
 }
 
+@media only screen and (max-height: 630px) {
+    .login-container {
+        height: 80vh;
+    };
+}
 
-footer {
-    width: 100%;
-    bottom: 0;
-    /* position: fixed; */
-    display: flex;
-    justify-content: space-evenly;
-    background-color:#9E2A2B;    
+@media only screen and (max-height: 480px) {
+    .login-container {
+        height: 100vh;
+    };
 }
