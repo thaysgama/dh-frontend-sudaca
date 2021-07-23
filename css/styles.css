@@ -197,6 +197,21 @@ h2 {
   justify-content: space-between;
 }
 
+.container-row::-webkit-scrollbar {
+  width: 1px;
+}
+
+.container-row::-webkit-scrollbar-track {
+  background-color:  #9E2A2B;
+  border-radius: 8px;
+}
+
+.container-row::-webkit-scrollbar-thumb {
+  background:#540B0E;
+  border: 1px solid #a11618;
+  border-radius: 8px;
+}
+
 .filme {
   width: 180px;
   height: 270px;
