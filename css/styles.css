@@ -116,8 +116,8 @@ label > img {
   background-color: #f2f2f2;
 }
 
-.logo-login > #logo {
-  width: 200px;
+.logo-login > a > #logo {
+  width: 250px;
   margin-left: 70px;
   margin-top: 1rem;
 }
@@ -145,7 +145,7 @@ hr {
 main {
   width: 100%;
   height: auto;
-  margin: 80px auto;
+  margin: 120px auto;
 }
 
 h2 {
@@ -157,7 +157,7 @@ h2 {
 #central {
   width: 100%;
   height: 70vh;
-  margin-top: 0;
+  margin-top: -50px;
   background-image: url("../img/central.webp");
   background-size: cover;
   background-position: center;
@@ -202,12 +202,12 @@ h2 {
 }
 
 .container-row::-webkit-scrollbar-track {
-  background-color:  #9E2A2B;
+  background-color: #9e2a2b;
   border-radius: 8px;
 }
 
 .container-row::-webkit-scrollbar-thumb {
-  background:#540B0E;
+  background: #540b0e;
   border: 1px solid #a11618;
   border-radius: 8px;
 }
@@ -249,6 +249,7 @@ h2 {
   opacity: 0;
   padding: 10px;
   transition: 0.3s ease all;
+  font-size: 0.6rem;
 }
 
 .footer-art .botao {
