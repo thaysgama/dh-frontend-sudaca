@@ -16,26 +16,49 @@
     <title>Sudaca - Login</title>
 </head>
 <body>
-    
     <header>
-        <div class="logo-container">
-            <a href="#">
-                <img src="./img/logo.png" alt="" class="logo">
-            </a>
-        </div>
-        <nav>
-            <ul class="menu">
-                <li class="menu-item"><a href="#sobre">Sobre nós</a></li>
-                <li class="menu-item"><a href="#planos-container">Planos</a></li>
-                <li class="menu-item"><a href="#login-container">Login</a></li>
+        <div class="menu-mobile">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">
+            <img src="img/menu-button-white.png" alt="icone de menu">
+            </label>
+            <div class="logo-login">
+            <img src="img/logo.png" alt="logo-sudaka-filmes" id="logo">
+            <img src="img/lupa.png" alt="icone de uma lupa" id="busca">
+            </div>
+            <nav>
+            <ul>
+                <li class="login"><a href="#"><img src="img/login.png" alt="icone de login"></a></li>
+                <li class="login"><a href="#login-formulario">Login</a></li>
+                <li class="login"><a href="#">Ajuda</a></li>
+                <hr>
+                <li class="menu"><a href="#sobre">Sobre</a></li>
+                <li class="menu"><a href="#planos-container">Planos</a></li>
             </ul>
-        </nav>
+            </nav>
+        </div>
+
+        <div class="menu-desktop">
+            <div class="logo-container">
+                <a href="#">
+                    <img src="./img/logo.png" alt="" class="logo">
+                </a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#sobre">Sobre nós</a></li>
+                    <li class="menu-item"><a href="#planos-container">Planos</a></li>
+                    <li class="menu-item"><a href="#login-formulario">Login</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <main>
-        <div class="fundo">
+
+        <section class="fundo"  id="login-formulario">
         <div class="fundo-imagem">
-            <div class="login-container" id="login-container">
+            <div class="login-container">
                     <h2>Login</h2>
                     <form action="./home.html">
                         <div class="login-input">
@@ -71,60 +94,73 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="sobre" id="sobre">
+        </section>
+
+        <section class="sobre" id="sobre">
             <div class="sobre-texto">
                 <h3>Sobre nós</h3>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum illum veritatis quam, fuga esse dolore minus ut quaerat sapiente recusandae, sint, aspernatur sequi beatae. Et odio repellat odit explicabo vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eius illum adipisci sit beatae suscipit unde vel hic. Id dolor fugit soluta nostrum commodi asperiores ad consequatur quis velit neque!</p>
+                <p>O SUDACA Filmes é um serviço de transmissão online que oferece uma ampla variedade de séries e filmes sulamericanos em milhares de aparelhos conectados à internet.</p>
+                <br>
+                <p>Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p>
+                <br>
+                <p>Mas, o que é SUDACA? Trata-se de uma expressão usada na Espanha para se referir aos sulamericanos. Em castelhano, América do Sul é “Sudamerica”, daí derivando a palavra “Sudaca”.</p>
+                <br>
+                <p>Usado como adjetivo pejorativo para menosprezar a cultura sulamericana, propomos uma apropriação do termo para que, assim, possamos afirmar: </p>
+                <br>
+                <p>SUCADAS sim, com muito orgulho de nossas cores e de nossa diversidade!</p> 
+                <br>
+                <p>Convidamos você para vê-las nas telinhas!</p>
             </div>
-        </div>
+        </section>
 
-        <div class="planos-container" id="planos-container">
-            <div class="planos">
-                <div class="cabecalho">
-                    <h3>Basic</h3>
+        <section class="planos-container" id="planos-container">
+            <div class="planos-grid">
+                <div class="planos">
+                    <div class="cabecalho">
+                        <h3>Basic</h3>
+                        <br>
+                        <h4>R$9,99/mês</h4>
+                    </div>
                     <br>
-                    <h4>R$9,99/mês</h4>
+                    <ul>
+                        <li>Smartphones e tablets</li>
+                        <li>1 tela de cada vez</li>
+                        <li>Qualidade padrão</li>
+                        <li>Baixe até 5 títulos</li>
+                    </ul>
+                    <button>QUERO ESSE PLANO</button>
                 </div>
-                <br>
-                <ul>
-                    <li>Smartphones e tablets</li>
-                    <li>1 tela de cada vez</li>
-                    <li>Qualidade padrão</li>
-                    <li>Baixe até 5 títulos</li>
-                </ul>
-                <button>QUERO ESSE PLANO</button>
-            </div>
-            <div class="planos">
-                <div class="cabecalho">
-                    <h3>Padrão</h3>
-                    <h4>R$19,99/mês</h4>
+                <div class="planos">
+                    <div class="cabecalho">
+                        <h3>Padrão</h3>
+                        <h4>R$19,99/mês</h4>
+                    </div>
+                    <br>
+                    <ul>
+                        <li>Todos os seus dispositivos</li>
+                        <li>2 telas ao mesmo tempo</li>
+                        <li>Qualidade melhor</li>
+                        <li>Baixe até 5 títulos</li>
+                    </ul>
+                    <button>QUERO ESSE PLANO</button>
                 </div>
-                <br>
-                <ul>
-                    <li>Todos os seus dispositivos</li>
-                    <li>2 telas ao mesmo tempo</li>
-                    <li>Qualidade melhor</li>
-                    <li>Baixe até 5 títulos</li>
-                </ul>
-                <button>QUERO ESSE PLANO</button>
-            </div>
-            <div class="planos">
-                <div class="cabecalho">
-                    <h3>Premium</h3>
-                    <h4>R$29,99/mês</h4>
+                <div class="planos">
+                    <div class="cabecalho">
+                        <h3>Premium</h3>
+                        <h4>R$29,99/mês</h4>
+                    </div>
+                    <br>
+                    <ul>
+                        <li>Todos os seus dispositivos</li>
+                        <li>4 telas ao mesmo tempo</li>
+                        <li>Alta definição e tecnologia 4k</li>
+                        <li>Baixe até 10 títulos</li>
+                    </ul>
+                    <button>QUERO ESSE PLANO</button>
                 </div>
-                <br>
-                <ul>
-                    <li>Todos os seus dispositivos</li>
-                    <li>4 telas ao mesmo tempo</li>
-                    <li>Alta definição e tecnologia 4k</li>
-                    <li>Baixe até 10 títulos</li>
-                </ul>
-                <button>QUERO ESSE PLANO</button>
             </div>
-        </div>
+        </sobre>
     </main>
 
     <footer>

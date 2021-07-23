@@ -7,7 +7,7 @@
 
 
 /* ---------------HEADER--------------------- */
-header {
+.menu-desktop{
     position: fixed;
     top: 0px;
     width: 100%;
@@ -67,6 +67,87 @@ nav {
 .menu-item:active {         /*isso aqui não está funcionando, ver porque*/
     transform: scale(1.3);
 }
+
+
+/* Menu Desktop */
+
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]:checked ~ nav {
+    transform: translateX(61vw);
+}
+.menu-mobile nav {
+    background-color: #540b0d6b;
+    width: 60vw;
+    height: 100%;
+    left: -61vw;
+    position: absolute;
+    transition: all 0.5s;
+    z-index: 2;
+    margin-top: 5px;
+    padding-top: 15px;
+}
+.menu-mobile ul {
+    position: absolute;
+    width: 100%;
+}
+.menu-mobile a {
+    display: block;
+    color: white;
+    margin-left: 20px;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+.menu-mobile a:hover {
+    position: relative;
+    color: #ffc300;
+    font-size: 1.5rem;
+    transition: 0.3s;
+  }
+.menu-mobile label {
+    padding: 1.5rem;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    margin-left: 2px;
+  }
+.menu-mobile .logo-login {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #540b0e;
+  }
+  
+.menu-mobile .logo-login > #logo {
+    width: 350px;
+    margin-left: 70px;
+    margin-top: 1rem;
+  }
+  
+.menu-mobile .banner {
+    width: 100%;
+    height: 85%;
+  }
+.menu-mobile .login {
+    font-size: 14px;
+    margin: 15px;
+    padding: 5px 10px;
+    list-style: none;
+  }
+  
+.menu-mobile #busca {
+    margin: 15px 45px 0 15px;
+  }
+  
+.menu-mobile hr {
+    margin: 20px 0 20px 0;
+    border: 1px solid rgba(102, 98, 98, 0.692);
+  }
+.menu-mobile  .menu {
+    padding: 20px 10px;
+  }
 
 
 /*...........FORMULÁRIO............ */
@@ -219,6 +300,7 @@ form [type="submit"]:hover {
     border-radius: 10px;
     max-width: 90vw;
     padding: 40px;
+    text-align: justify;
 }
 
 /*........... PLANOS............ */
@@ -226,19 +308,23 @@ form [type="submit"]:hover {
 .planos-container{
     background: linear-gradient(45deg, #540B0E 0%, #9E2A2B 100%);
     height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    
+    display: grid;
+}
+
+.planos-grid{
+    max-width: 90%;
+    margin: 120px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-content: center;
+    gap: 10px;
 }
 
 .planos{
     background-color: rgba(255, 251, 251, 0.2);
     border: 1px solid rgb(168, 168, 168);
     color: white;
-    min-height: 30vh;
-    min-width: 285px;
+    min-height: 20vh;
     border-radius: 10px;
     padding: 20px 40px;
     position: relative;
@@ -264,13 +350,12 @@ form [type="submit"]:hover {
     border-width: 0;
     border-style: none;
     border-radius: 40px;
-    width: 15em;
+    width: 80%;
     height: 40px;
-    margin: 10px;
-    display: none;
     font-weight: bolder;
     position: absolute;
-    margin: auto;
+    left: 50%;
+    transform: translate(-50%,-50%); 
     bottom: 15%;
 }
 
@@ -357,31 +442,61 @@ footer {
 
 }
 
-
-@media (min-width: 600px)and (max-width:1200px){
-    .planos{
-        margin: 0 500px;
-    }
-}
-@media (min-width:1200px){
-    .planos{
-        min-height: 400px;
-        line-height: 200%;
+@media screen and (max-width:480px) {
+    .menu-desktop{
+        display: none;
     }
     .planos-container button{
-        display: block;
+        display: none;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+    .menu-desktop{
+        display: none;
+    }
+    .planos-container button{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1279px) {
+    .menu-mobile{
+        display: none;
+    }
+    .planos-grid{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2%;
+        
+    }
+    .planos{
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .menu-mobile{
+        display: none;
+    }
+    .planos-grid{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2%;
+    }
+    .planos{
+        height: 50vh;
     }
     .sobre{
         background-image: url('../img/elderly-man-using-a-mobile-phone.jpg');
         background-size: cover;
-        padding: 15%;
+        padding: 5%;
     }
     .sobre-texto{
         margin-left: 60%;
     }
 }
 
-@media only screen and (max-height: 630px) {
+
+/* @media only screen and (max-height: 630px) {
     .login-container {
         height: 80vh;
     };
@@ -391,4 +506,4 @@ footer {
     .login-container {
         height: 100vh;
     };
-}
+} */
