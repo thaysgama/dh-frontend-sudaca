@@ -159,7 +159,7 @@ h2 {
   width: 100%;
   height: 70vh;
   margin-top: -50px;
-  background-image: url("../img/central.webp");
+  background-image: url("../img/central.jpg");
   background-size: cover;
   background-position: 99% center;
   background-repeat: no-repeat;
@@ -507,6 +507,10 @@ footer p {
 @media screen and (max-width: 481px) and (orientation: portrait) {
   #central {
     padding-top: 100px;
+  }
+
+  #central button {
+    margin-right: 0 35px;
   }
 
   h2 {
