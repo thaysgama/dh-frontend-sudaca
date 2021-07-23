@@ -505,7 +505,7 @@ footer p {
 
 @media screen and (max-width: 481px) and (orientation: portrait) {
   #central {
-    padding-top: 350px;
+    padding-top: 100px;
   }
 
   .logo-login > #logo {
@@ -519,7 +519,7 @@ footer p {
 
 @media screen and (min-width: 481px) and (orientation: portrait) {
   #central {
-    padding-top: 350px;
+    padding-top: 280px;
   }
 
   .logo-login > #logo {
@@ -535,7 +535,7 @@ footer p {
   #central {
     padding-right: 100px;
     padding-left: 30px;
-    padding-top: 330px;
+    padding-top: 380px;
   }
 
   .container-row {
@@ -578,24 +578,12 @@ footer p {
     grid-template-columns: repeat(16, 320px);
   }
 }
-@media screen and (max-width: 481px) and (orientation: landscape) {
-  #central {
-    padding-top: 80px;
-  }
-
-  .logo-login > #logo {
-    width: 300px;
-  }
-
-  .filme {
-    font-size: 0.5rem;
-  }
-}
 
 @media screen and (min-width: 481px) and (orientation: landscape) {
   #central {
     padding-left: 30px;
-    padding-top: 80px;
+    padding-right: 180px;
+    padding-top: 20px;
   }
 
   .logo-login > #logo {
@@ -611,7 +599,7 @@ footer p {
   #central {
     padding-right: 550px;
     padding-left: 30px;
-    padding-top: 50px;
+    padding-top: 10px;
   }
 
   .container-row {
