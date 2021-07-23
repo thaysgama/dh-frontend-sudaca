@@ -509,6 +509,10 @@ footer p {
     padding-top: 100px;
   }
 
+  h2 {
+    margin-top: 70px;
+  }
+
   .logo-login > #logo {
     width: 300px;
   }
@@ -521,6 +525,10 @@ footer p {
 @media screen and (min-width: 481px) and (orientation: portrait) {
   #central {
     padding-top: 280px;
+  }
+
+  h2 {
+    margin-top: 70px;
   }
 
   .logo-login > #logo {
@@ -539,6 +547,10 @@ footer p {
     padding-top: 380px;
   }
 
+  h2 {
+    margin-top: 70px;
+  }
+
   .container-row {
     padding: 30px;
     height: 400px;
@@ -550,6 +562,10 @@ footer p {
   #central {
     padding-right: 550px;
     padding-top: 380px;
+  }
+
+  h2 {
+    margin-top: 70px;
   }
 
   #desktop {
@@ -587,6 +603,10 @@ footer p {
     padding-top: 20px;
   }
 
+  h2 {
+    margin-top: 70px;
+  }
+
   .logo-login > #logo {
     width: 300px;
   }
@@ -603,6 +623,10 @@ footer p {
     padding-top: 10px;
   }
 
+  h2 {
+    margin-top: 70px;
+  }
+
   .container-row {
     padding: 30px;
     height: 400px;
@@ -614,6 +638,10 @@ footer p {
   #central {
     padding-right: 850px;
     padding-top: 50px;
+  }
+
+  h2 {
+    margin-top: 70px;
   }
 
   #desktop {
