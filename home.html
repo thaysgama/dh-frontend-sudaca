@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-  <title>Sudaca Filmes - Lista de filmes</title>
+  <title>Sudaca Filmes - filmes</title>
 
 </head>
 
@@ -23,7 +23,17 @@
       <img src="./img/lupa.svg" alt="icone de uma lupa" id="busca">
     </div>
 
-    <nav>
+    <nav id="desktop">
+      <ul>
+        <li><a href="#">filmes</a></li>
+        <li><a href="#">series</a></li>
+        <li><a href=""> minha lista</a></li>
+        <li><a href="">populares</a></li>
+        <li><a href="">logout</a></li>
+      </ul>
+    </nav>
+
+    <nav id="mobile">
       <ul>
         <li class="login"><a href="#"><img src="img/login.png" alt="icone de login"></a></li>
         <li class="login"><a href="#">Conta</a></li>
@@ -38,14 +48,34 @@
     </nav>
   </header>
 
+  </header>
+
   <main>
 
     <div class="grid">
 
       <!-- Article - elementos com informações segmenmtadas - indexáveis -->
 
-      <h2>Mais vistos</h2>
+      <div id="central">
 
+        <section class="descricao">
+
+          <h2>narcos</h2>
+
+          <p>
+            Com o fim da violenta caçada a Pablo Escobar, o jogo agora tem novas regras. E os EUA vão enfrentar outro inimigo na guerra às drogas: o cartel de Cali.
+          </p>
+
+          <button role="button" class="botao">
+            <i class="fas fa-play"></i>
+            assistir</button>
+          <button role="button" class="botao">
+            <i class="fas fa-info-circle"></i>
+          </button>
+        </section>
+      </div>
+
+      <h2>Mais vistos</h2>
 
       <div class="container-row">
 

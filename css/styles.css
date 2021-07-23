@@ -6,7 +6,7 @@
   list-style: none;
   text-decoration: none;
   /*  border: red solid thin; */
-  font-family: Helvetica, sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
 }
 
 body {
@@ -23,8 +23,49 @@ input[type="checkbox"]:checked ~ nav {
   transform: translateX(61vw);
 }
 
-nav {
-  background-color: #f2f2f24e;
+/* Menus */
+
+#desktop li {
+  border-color: none;
+  border-radius: 1px;
+  text-align: center;
+  /*   margin: 0 10px; */
+}
+#desktop li a {
+  padding: 1px 20px;
+  background-color: #bf2431;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+}
+#desktop li > a:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  background-color: #f29544;
+}
+#desktop > li > a:active {
+  /*isso aqui não está funcionando, ver porque*/
+  transform: scale(1.3);
+}
+
+#desktop {
+  display: none;
+}
+
+#desktop ul {
+  width: fit-content;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: fixed;
+  right: 85px;
+  top: 25px;
+  z-index: 3;
+}
+
+#mobile {
+  background-color: #f2f2f2cc;
   width: 60vw;
   height: 100%;
   left: -61vw;
@@ -40,7 +81,7 @@ ul {
 }
 a {
   display: block;
-  color: white;
+  color: rgb(70, 70, 70);
   margin-left: 20px;
   font-size: 1rem;
   transition: 0.3s;
@@ -442,29 +483,9 @@ footer p {
 
 /*Media screen and presentations*/
 
-@media screen and (max-width: 480px) {
-  .logo-login > #logo {
-    width: 200px;
-    /*     margin-left: 70px;
-    margin-top: 1.5rem; */
-  }
-  #icone-menu {
-    width: 80%;
-  }
-  /*   #busca {
-    width: 25px;
-    margin: 25px 45px 0 15px;
-  } */
-  .filme {
-    font-size: 0.5rem;
-  }
-}
-
 @media screen and (min-width: 481px) {
   .logo-login > #logo {
     width: 300px;
-    /*     margin-left: 70px;
-    margin-top: 1.5rem; */
   }
 
   .filme {
@@ -473,7 +494,38 @@ footer p {
 }
 
 @media screen and (min-width: 769px) {
+  .container-row {
+    padding: 30px;
+    height: 400px;
+    grid-template-columns: repeat(16, 230px);
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  #desktop {
+    display: flex;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+  label > img {
+    display: none;
+  }
+
+  .filme {
+    width: 280px;
+    height: 370px;
+  }
+
+  .botao {
+    font-size: 1.5rem;
+  }
+
+  .container-row {
+    padding: 35px;
+    height: 500px;
+    grid-template-columns: repeat(16, 320px);
+  }
 }
