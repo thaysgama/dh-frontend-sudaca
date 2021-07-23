@@ -29,15 +29,15 @@ input[type="checkbox"]:checked ~ nav {
   border-color: none;
   border-radius: 1px;
   text-align: center;
-  /*   margin: 0 10px; */
 }
 #desktop li a {
-  padding: 1px 20px;
+  padding: 7px 20px;
   background-color: #bf2431;
   font-size: 18px;
   font-weight: 600;
   color: #fff;
   text-transform: capitalize;
+  border-radius: 5px;
 }
 #desktop li > a:hover {
   transform: scale(1.2);
