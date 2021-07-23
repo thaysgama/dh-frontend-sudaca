@@ -85,7 +85,7 @@ nav {
     width: 60vw;
     height: 100%;
     left: -61vw;
-    position: absolute;
+    position: fixed;
     transition: all 0.5s;
     z-index: 2;
     margin-top: -5px;
@@ -170,6 +170,7 @@ nav {
 .fundo{
     height: 100vh;
     background: linear-gradient(45deg,  #9E2A2B 0%, #FFE033 100%);
+    background-attachment: fixed;
 }
 
 
@@ -187,7 +188,8 @@ nav {
 .login-container {
     background-color: rgba(255, 255, 255, 0.55);
     width: 320px;
-    height: 60vh;
+    height: 60%;
+    max-height: 450px;
     padding: 2rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
@@ -319,7 +321,7 @@ form [type="submit"]:hover {
 .sobre-texto{
     background-color: #fff;
     border-radius: 10px;
-    max-width: 90vw;
+    max-width: 90%;
     padding: 40px;
     text-align: justify;
 }
@@ -345,7 +347,8 @@ form [type="submit"]:hover {
     background-color: rgba(255, 251, 251, 0.2);
     border: 1px solid rgb(168, 168, 168);
     color: white;
-    min-height: 20vh;
+    min-height: 20%;
+    max-height: 380px;
     border-radius: 10px;
     padding: 20px 40px;
     position: relative;
@@ -474,12 +477,12 @@ footer {
         flex-basis: 50%;
     }
     .sobre-texto{
-        font-size: 0.85rem;
-        line-height: 100%;
+        font-size: 0.75rem;
+        line-height: 70%;
     }
     .sobre h3{
-        font-size: 2.5rem;
-        line-height: 120%;
+        font-size: 2rem;
+        line-height: 100%;
     }
 }
 
@@ -525,18 +528,16 @@ footer {
     .sobre-texto{
         margin-left: 60%;
     }
-    
 }
 
+@media screen and (max-height: 630px){
+    section#sobre,
+    section#planos-container{
+        height: 200vh;
+    }
 
-/* @media only screen and (max-height: 630px) {
-    .login-container {
-        height: 80vh;
-    };
-}
-
-@media only screen and (max-height: 480px) {
-    .login-container {
-        height: 100vh;
-    };
-} */
+    section#login-formulario, 
+    .fundo-imagem {
+        height: 200vh;
+    }
+} 
