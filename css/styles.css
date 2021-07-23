@@ -160,6 +160,7 @@ main {
 h2 {
   text-align: left;
   margin-left: 50px;
+  margin-top: 70px;
   color: #fff;
 }
 
@@ -521,6 +522,14 @@ footer p {
     padding-top: 100px;
   }
 
+  #central button {
+    margin-right: 0 35px;
+  }
+
+  h2 {
+    margin-top: 70px;
+  }
+
   .logo-login > #logo {
     width: 300px;
   }
@@ -544,6 +553,10 @@ footer p {
     grid-template-columns: repeat(16, 230px);
   }
 
+  h2 {
+    margin-top: 70px;
+  }
+
   .logo-login > #logo {
     width: 300px;
   }
@@ -561,6 +574,10 @@ footer p {
     background-image: url("../img/central2.jpg");
     background-position: top;
     margin-top: 0;
+  }
+
+  h2 {
+    margin-top: 70px;
   }
 
   .container-row {
@@ -582,6 +599,10 @@ footer p {
     margin-top: 90px;
     padding-top: 400px;
     text-align: left;
+  }
+
+  h2 {
+    margin-top: 70px;
   }
 
   #desktop {
@@ -642,6 +663,10 @@ footer p {
     padding-top: 20px;
   }
 
+  h2 {
+    margin-top: 70px;
+  }
+
   .logo-login > #logo {
     width: 300px;
   }
@@ -658,6 +683,10 @@ footer p {
     padding-top: 10px;
   }
 
+  h2 {
+    margin-top: 70px;
+  }
+
   .container-row {
     padding: 30px;
     height: 400px;
@@ -669,6 +698,10 @@ footer p {
   #central {
     padding-right: 850px;
     padding-top: 50px;
+  }
+
+  h2 {
+    margin-top: 70px;
   }
 
   #desktop {
