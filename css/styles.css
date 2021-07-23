@@ -51,7 +51,8 @@ a:hover {
   font-size: 1.5rem;
   transition: 0.3s;
 }
-label {
+label > img {
+  width: 80px;
   padding: 1.5rem;
   position: fixed;
   top: 0px;
@@ -123,10 +124,6 @@ h2 {
   color: #ccc;
   padding-top: 150px;
   padding-left: 50px;
-}
-
-#menu {
-  width: 30px;
 }
 
 .descricao > h2,
