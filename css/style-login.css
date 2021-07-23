@@ -46,10 +46,10 @@ nav {
     border-radius: 5px;
 }
 .menu-item {
-    padding: 0 15px;  
-    background-color:#BF2431 ;  
+    padding: 10px 15px;  
+    background-color:#a4161a ;  
     border-color: none;
-    border-radius: 1px;
+    border-radius: 4px;
 }
 .menu a {
     text-decoration: none;
@@ -69,25 +69,28 @@ nav {
 }
 
 
-/* Menu Desktop */
 
-input[type="checkbox"] {
+/* Menu MOBILE */
+
+.menu-mobile input[type="checkbox"] {
     display: none;
 }
-input[type="checkbox"]:checked ~ nav {
+
+.menu-mobile input[type="checkbox"]:checked ~ nav {
     transform: translateX(61vw);
 }
+  
 .menu-mobile nav {
-    background-color: #540b0d6b;
+    background-color: #2e2e2ef6;
     width: 60vw;
     height: 100%;
     left: -61vw;
     position: absolute;
     transition: all 0.5s;
     z-index: 2;
-    margin-top: 5px;
-    padding-top: 15px;
+    margin-top: -5px;
 }
+  
 .menu-mobile ul {
     position: absolute;
     width: 100%;
@@ -98,57 +101,69 @@ input[type="checkbox"]:checked ~ nav {
     margin-left: 20px;
     font-size: 1rem;
     transition: 0.3s;
-  }
+}
 .menu-mobile a:hover {
     position: relative;
     color: #ffc300;
     font-size: 1.5rem;
     transition: 0.3s;
-  }
+}
 .menu-mobile label {
     padding: 1.5rem;
-    position: absolute;
-    z-index: 2;
+    position: fixed;
+    top: 0px;
+    z-index: 3;
     cursor: pointer;
     margin-left: 2px;
-  }
+}
 .menu-mobile .logo-login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 70px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    background-color: #540b0e;
-  }
+    color: #f2f2f24e;
+    background-color: #f2f2f2;
+    
+}
   
 .menu-mobile .logo-login > #logo {
-    width: 350px;
+    width: 200px;
     margin-left: 70px;
     margin-top: 1rem;
-  }
+}
   
-.menu-mobile .banner {
-    width: 100%;
-    height: 85%;
-  }
 .menu-mobile .login {
     font-size: 14px;
     margin: 15px;
     padding: 5px 10px;
     list-style: none;
-  }
+}
   
 .menu-mobile #busca {
     margin: 15px 45px 0 15px;
-  }
+}
   
 .menu-mobile hr {
     margin: 20px 0 20px 0;
     border: 1px solid rgba(102, 98, 98, 0.692);
-  }
-.menu-mobile  .menu {
+}
+.menu-mobile .menu {
     padding: 20px 10px;
+}
+
+.menu-mobile #menu {
+    width: 30px;
   }
 
+
+
+  
 
 /*...........FORMULÁRIO............ */
 
@@ -176,8 +191,8 @@ input[type="checkbox"]:checked ~ nav {
     padding: 2rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    /* margin provisória até a chegada dos outros elementos */
-    
+    color: #A4161A;
+    font-weight: 500;
 }
 form {
     display: flex;
@@ -186,18 +201,20 @@ form {
 .login-container h2 {
     font-weight: 600;
     margin-bottom: 1rem;
-    /* text-align: center; */
+    font-size: 2rem;
 }
 .login-input input {
     outline: none;
     font-size: 0.9rem;
-    color: rgba(0, 0, 0, 0.7);
+    color: #A4161A;
     width: 100%;
     margin-bottom: 0.3rem;
     padding: 10px;
     border-radius: 6px;
     display: flex;
     flex-direction: column;
+    border: none;
+    background-color: #F2F2F2;
 }
 
 .salvar-senha {
@@ -217,23 +234,26 @@ form {
 .salvar-senha a {
     text-decoration: none;
     cursor: pointer;
-    color: #FFE033;
+    color: #A4161A;
 }
 form [type="submit"] {
     margin-top: 1rem;
-    padding: .4rem;
+    padding: .5rem;
     width: 100%;
-    background: #2EA25E;
+    background: #F29544;
     cursor: pointer;
-    color: white;
+    color: #A4161A;
     font-size: .9rem;
-    font-weight: 300;
-    border-radius: 4px;
+    font-weight: 500;
+    border-radius: 5px;
     transition-duration: .3s;
+    border: none;
 }
 form [type="submit"]:hover {
     letter-spacing: .7px;
+    opacity: .75;
 }
+
 .login-footer {
     display: flex;
     flex-direction: column;
@@ -275,6 +295,7 @@ form [type="submit"]:hover {
     transition-duration: .2s;
 }
 
+
 /*........... SOBRE............ */
 .sobre{
     background-color: white;
@@ -313,7 +334,7 @@ form [type="submit"]:hover {
 
 .planos-grid{
     max-width: 90%;
-    margin: 120px auto;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-content: center;
@@ -449,6 +470,17 @@ footer {
     .planos-container button{
         display: none;
     }
+    .user-links > li {
+        flex-basis: 50%;
+    }
+    .sobre-texto{
+        font-size: 0.85rem;
+        line-height: 100%;
+    }
+    .sobre h3{
+        font-size: 2.5rem;
+        line-height: 120%;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width:768px) {
@@ -493,6 +525,7 @@ footer {
     .sobre-texto{
         margin-left: 60%;
     }
+    
 }
 
 
