@@ -160,16 +160,17 @@ h2 {
   margin-top: -50px;
   background-image: url("../img/central.webp");
   background-size: cover;
-  background-position: center;
+  background-position: 99% center;
   background-repeat: no-repeat;
   color: #ccc;
-  padding-top: 150px;
-  padding-left: 50px;
+  padding-top: 200px;
+  padding-left: 20px;
+  padding-right: 50px;
 }
 
 .descricao > h2,
 .descricao > p {
-  margin: 15px 0;
+  margin: 15px auto;
 }
 
 .descricao h2 {
@@ -177,6 +178,7 @@ h2 {
 }
 
 .descricao button {
+  margin-top: 5px;
   cursor: pointer;
 }
 
@@ -499,7 +501,13 @@ footer p {
 
 /*Media screen and presentations*/
 
-@media screen and (min-width: 481px) {
+/*Retrato*/
+
+@media screen and (max-width: 481px) and (orientation: portrait) {
+  #central {
+    padding-top: 350px;
+  }
+
   .logo-login > #logo {
     width: 300px;
   }
@@ -509,7 +517,27 @@ footer p {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 481px) and (orientation: portrait) {
+  #central {
+    padding-top: 350px;
+  }
+
+  .logo-login > #logo {
+    width: 300px;
+  }
+
+  .filme {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (orientation: portrait) {
+  #central {
+    padding-right: 100px;
+    padding-left: 30px;
+    padding-top: 330px;
+  }
+
   .container-row {
     padding: 30px;
     height: 400px;
@@ -517,7 +545,88 @@ footer p {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1280px) and (orientation: portrait) {
+  #central {
+    padding-right: 550px;
+    padding-top: 380px;
+  }
+
+  #desktop {
+    display: flex;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+  label > img {
+    display: none;
+  }
+
+  .filme {
+    width: 280px;
+    height: 370px;
+  }
+
+  .botao {
+    font-size: 1.5rem;
+  }
+
+  .container-row {
+    padding: 35px;
+    height: 500px;
+    grid-template-columns: repeat(16, 320px);
+  }
+}
+@media screen and (max-width: 481px) and (orientation: landscape) {
+  #central {
+    padding-top: 80px;
+  }
+
+  .logo-login > #logo {
+    width: 300px;
+  }
+
+  .filme {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (orientation: landscape) {
+  #central {
+    padding-left: 30px;
+    padding-top: 80px;
+  }
+
+  .logo-login > #logo {
+    width: 300px;
+  }
+
+  .filme {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (orientation: landscape) {
+  #central {
+    padding-right: 550px;
+    padding-left: 30px;
+    padding-top: 50px;
+  }
+
+  .container-row {
+    padding: 30px;
+    height: 400px;
+    grid-template-columns: repeat(16, 230px);
+  }
+}
+
+@media screen and (min-width: 1280px) and (orientation: landscape) {
+  #central {
+    padding-right: 850px;
+    padding-top: 50px;
+  }
+
   #desktop {
     display: flex;
   }
