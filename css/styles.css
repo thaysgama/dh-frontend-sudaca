@@ -324,16 +324,17 @@ h2 {
 }
 
 footer {
-  height: 5vh;
+  height: 8vh;
   border-top: rgb(29, 29, 29) solid thin;
   border-width: 2px;
+  line-height: 2px;
+  margin: 20px 0;
 }
 
 footer p {
   color: #fff;
   text-align: center;
-  height: 50px;
-  line-height: 50px;
+  margin: 20px auto;
 }
 
 /*Implementação das imagens como background de cada card*/
@@ -733,6 +734,12 @@ footer p {
   .filme {
     font-size: 0.5rem;
   }
+
+  footer {
+    height: 15vh;
+    line-height: 2px;
+    margin: 20px 0;
+  }
 }
 
 @media screen and (min-width: 769px) and (orientation: landscape) {
@@ -755,6 +762,12 @@ footer p {
     padding: 30px;
     height: 400px;
     grid-template-columns: repeat(17, 230px);
+  }
+
+  footer {
+    height: 8vh;
+    line-height: 2px;
+    margin: 20px 0;
   }
 }
 
