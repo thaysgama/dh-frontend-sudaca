@@ -14,14 +14,13 @@ html {
 }
 
 :target {
-  scroll-margin-top: .8em;
+  scroll-margin-top: 0.8em;
 }
 
 body {
   height: auto;
   background-color: black;
 }
-
 
 /* Menu */
 
@@ -178,7 +177,7 @@ h2 {
   padding-right: 50px;
   text-align: center;
 }
-#central h2{
+#central h2 {
   text-align: center;
 }
 
@@ -258,7 +257,7 @@ h2 {
 
 .footer-art {
   width: 100%;
-  height: 90px;
+  height: 130px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -513,6 +512,11 @@ footer p {
   background-repeat: no-repeat;
 }
 
+.desativado {
+  background-color: #000;
+  border: none;
+}
+
 /*Media screen and presentations*/
 
 /*Retrato*/
@@ -587,7 +591,7 @@ footer p {
   }
 
   .logo-login {
-    height: 80px; 
+    height: 80px;
   }
 }
 
@@ -633,7 +637,7 @@ footer p {
     grid-template-columns: repeat(16, 320px);
   }
 
-  #central h2{
+  #central h2 {
     text-align: left;
   }
   .logo-login {
@@ -651,7 +655,7 @@ footer p {
   .descricao p {
     font-size: 1.2rem;
   }
-  button.botao{
+  button.botao {
     margin: 7px;
   }
 }
