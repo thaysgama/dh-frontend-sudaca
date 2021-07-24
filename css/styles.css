@@ -191,9 +191,12 @@ h2 {
   text-transform: capitalize;
 }
 
-.descricao button {
-  margin-top: 5px;
-  cursor: pointer;
+.botao-central {
+  margin: 1px;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
 }
 
 .container-row {
@@ -268,7 +271,8 @@ h2 {
   font-size: 0.6rem;
 }
 
-.footer-art .botao {
+.footer-art .botao,
+.botao-central {
   /* width: 50%; */
   opacity: 1;
   transition: 0.3s ease all;
@@ -286,7 +290,9 @@ h2 {
 .filme:active,
 .filme:hover,
 .botao:active,
-.botao:hover {
+.botao:hover,
+.botao-central:active,
+.botao-central:hover {
   opacity: 1;
   cursor: pointer;
   transform: scale(1.25);
@@ -531,6 +537,10 @@ footer p {
     margin-right: 0 35px;
   }
 
+  .botao-central {
+    font-size: 1rem;
+  }
+
   h2 {
     margin-top: 70px;
   }
@@ -550,6 +560,10 @@ footer p {
     background-image: url("../img/central1.jpg");
     background-position: top;
     margin-top: 0;
+  }
+
+  .botao-central {
+    font-size: 1rem;
   }
 
   .container-row {
@@ -581,6 +595,10 @@ footer p {
     margin-top: 0;
   }
 
+  .botao-central {
+    font-size: 1rem;
+  }
+
   h2 {
     margin-top: 70px;
   }
@@ -604,6 +622,10 @@ footer p {
     margin-top: 90px;
     padding-top: 400px;
     text-align: left;
+  }
+
+  .botao-central {
+    font-size: 1rem;
   }
 
   h2 {
@@ -669,6 +691,10 @@ footer p {
     padding-top: 20px;
   }
 
+  .botao-central {
+    font-size: 1rem;
+  }
+
   h2 {
     margin-top: 70px;
   }
@@ -693,6 +719,10 @@ footer p {
     margin-top: 70px;
   }
 
+  .botao-central {
+    font-size: 1rem;
+  }
+
   .container-row {
     padding: 30px;
     height: 400px;
@@ -708,6 +738,10 @@ footer p {
 
   h2 {
     margin-top: 70px;
+  }
+
+  .botao-central {
+    font-size: 1rem;
   }
 
   #desktop {
@@ -728,6 +762,10 @@ footer p {
   }
 
   .botao {
+    font-size: 1.5rem;
+  }
+
+  .botao-central {
     font-size: 1.5rem;
   }
 
