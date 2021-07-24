@@ -1,3 +1,5 @@
+/* Reset css */
+
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +11,8 @@
   font-family: "Alegreya Sans", sans-serif;
 }
 
+/* Rolagem suave da página */
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,12 +21,14 @@ html {
   scroll-margin-top: 0.8em;
 }
 
+/* Estilos de elementos gerais */
+
 body {
   height: auto;
   background-color: black;
 }
 
-/* Menu */
+/* Estilos de menus */
 
 input[type="checkbox"] {
   display: none;
@@ -31,7 +37,7 @@ input[type="checkbox"]:checked ~ nav {
   transform: translateX(61vw);
 }
 
-/* Menus */
+/*Estilos para  menu desktop para media queries acima de width: 1280px*/
 
 #desktop li {
   border-color: none;
@@ -70,6 +76,8 @@ input[type="checkbox"]:checked ~ nav {
   top: 25px;
   z-index: 3;
 }
+
+/*Estilos para menu mobile para media queries abaixo ou igual a 1280px*/
 
 #mobile {
   background-color: #f2f2f2cc;
@@ -125,7 +133,7 @@ label > img {
 }
 
 .logo-login > a > #logo {
-  width: 250px;
+  width: 180px;
   margin-left: 70px;
   margin-top: 1rem;
 }
@@ -137,7 +145,7 @@ label > img {
 }
 
 #busca {
-  margin: 15px 45px 0 15px;
+  margin: 15px 45px 10px 15px;
 }
 
 hr {
@@ -148,7 +156,7 @@ hr {
   padding: 20px 10px;
 }
 
-/* Menu */
+/*Estilos para elementos da main e grids*/
 
 main {
   width: 100%;
@@ -162,6 +170,8 @@ h2 {
   margin-top: 70px;
   color: #fff;
 }
+
+/*imagem central*/
 
 #central {
   width: 100%;
@@ -199,13 +209,15 @@ h2 {
   border: none;
 }
 
+/* Estilos dos conteineres caroussel */
+
 .container-row {
   width: 95vw;
   height: 380px;
   overflow-y: hidden;
   overflow-x: scroll;
   display: grid;
-  grid-template-columns: repeat(16, 200px);
+  grid-template-columns: repeat(17, 200px);
   grid-template-rows: 1;
   grid-auto-flow: dense;
   padding: 25px;
@@ -231,6 +243,8 @@ h2 {
   border-radius: 8px;
 }
 
+/*Estilos para cada card dos filmes*/
+
 .filme {
   width: 180px;
   height: 270px;
@@ -248,6 +262,12 @@ h2 {
   transition: background-color, 0.3s, color, 0.5s;
 }
 
+/*Estilo do card que provê espaçamento adicional após último filme/ série*/
+
+.card-desativado {
+  max-width: 20%;
+}
+
 .botao {
   font-size: 1em;
   opacity: 1;
@@ -258,6 +278,8 @@ h2 {
   cursor: pointer;
   border-radius: 5px;
 }
+
+/*Estilos para descrição dos filmes/séries*/
 
 .footer-art {
   width: 100%;
@@ -302,12 +324,20 @@ h2 {
   border: rgb(255, 155, 5) solid thin;
 }
 
+footer {
+  height: 5vh;
+  border-top: rgb(29, 29, 29) solid thin;
+  border-width: 2px;
+}
+
 footer p {
   color: #fff;
   text-align: center;
   height: 50px;
   line-height: 50px;
 }
+
+/*Implementação das imagens como background de cada card*/
 
 .f1 {
   background-image: url("../img/Filmes/FILME\ ANA\ E\ VITORIA.webp");
@@ -524,7 +554,7 @@ footer p {
   border: none;
 }
 
-/*Media screen and presentations*/
+/*Media queries para telas em retrat e paisagem*/
 
 /*Retrato*/
 
@@ -545,10 +575,6 @@ footer p {
     margin-top: 70px;
   }
 
-  .logo-login > #logo {
-    width: 300px;
-  }
-
   .filme {
     font-size: 0.5rem;
   }
@@ -558,8 +584,9 @@ footer p {
   #central {
     padding-top: 280px;
     background-image: url("../img/central1.jpg");
-    background-position: top;
-    margin-top: 0;
+    background-position-y: top;
+    background-position-x: center;
+    margin-top: -48px;
   }
 
   .botao-central {
@@ -569,15 +596,11 @@ footer p {
   .container-row {
     padding: 30px;
     height: 400px;
-    grid-template-columns: repeat(16, 230px);
+    grid-template-columns: repeat(17, 230px);
   }
 
   h2 {
     margin-top: 70px;
-  }
-
-  .logo-login > #logo {
-    width: 300px;
   }
 
   .filme {
@@ -591,7 +614,8 @@ footer p {
     padding-left: 30px;
     padding-top: 380px;
     background-image: url("../img/central2.jpg");
-    background-position: top;
+    background-position-y: top;
+    background-position-x: center;
     margin-top: 0;
   }
 
@@ -618,7 +642,8 @@ footer p {
   #central {
     padding-right: 550px;
     background-image: url("../img/central3.jpg");
-    background-position: top;
+    background-position-y: top;
+    background-position-x: center;
     margin-top: 90px;
     padding-top: 400px;
     text-align: left;
@@ -658,7 +683,7 @@ footer p {
   .container-row {
     padding: 35px;
     height: 500px;
-    grid-template-columns: repeat(16, 320px);
+    grid-template-columns: repeat(17, 320px);
   }
 
   #central h2 {
@@ -683,6 +708,8 @@ footer p {
     margin: 7px;
   }
 }
+
+/*Paisagem*/
 
 @media screen and (min-width: 481px) and (orientation: landscape) {
   #central {
@@ -726,7 +753,7 @@ footer p {
   .container-row {
     padding: 30px;
     height: 400px;
-    grid-template-columns: repeat(16, 230px);
+    grid-template-columns: repeat(17, 230px);
   }
 }
 
@@ -769,9 +796,13 @@ footer p {
     font-size: 1.5rem;
   }
 
+  .logo-login > a > #logo {
+    width: 300px;
+  }
+
   .container-row {
     padding: 35px;
     height: 500px;
-    grid-template-columns: repeat(16, 320px);
+    grid-template-columns: repeat(17, 320px);
   }
 }
