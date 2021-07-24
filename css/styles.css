@@ -75,11 +75,11 @@ input[type="checkbox"]:checked ~ nav {
   background-color: #f2f2f2cc;
   font-weight: bolder;
   width: 60vw;
-  height: 100%;
+  height: 500px;
   left: -61vw;
   position: absolute;
   transition: all 0.5s;
-  z-index: 2;
+  z-index: 1;
   margin-top: -10px;
 }
 
@@ -169,7 +169,8 @@ h2 {
   margin-top: -50px;
   background-image: url("../img/central1.jpg");
   background-size: cover;
-  background-position: center;
+  background-position-y: top;
+  background-position-x: center;
   background-repeat: no-repeat;
   color: #ccc;
   padding-top: 300px;
@@ -619,6 +620,7 @@ footer p {
 
   label > img {
     display: none;
+    z-index: 3;
   }
 
   .filme {
