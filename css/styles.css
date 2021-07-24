@@ -7,7 +7,6 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  /*  border: red solid thin; */
   font-family: "Alegreya Sans", sans-serif;
 }
 
@@ -582,7 +581,7 @@ footer p {
 
 @media screen and (min-width: 481px) and (orientation: portrait) {
   #central {
-    padding-top: 280px;
+    padding-top: 100px;
     background-image: url("../img/central1.jpg");
     background-position-y: top;
     background-position-x: center;
@@ -715,11 +714,12 @@ footer p {
   #central {
     padding-left: 30px;
     padding-right: 180px;
-    padding-top: 20px;
+    padding-top: 30px;
   }
 
   .botao-central {
     font-size: 1rem;
+    margin-top: -5px;
   }
 
   h2 {
@@ -737,9 +737,9 @@ footer p {
 
 @media screen and (min-width: 769px) and (orientation: landscape) {
   #central {
-    padding-right: 550px;
+    padding-right: 180px;
+    padding-top: 70px;
     padding-left: 30px;
-    padding-top: 10px;
   }
 
   h2 {
@@ -748,6 +748,7 @@ footer p {
 
   .botao-central {
     font-size: 1rem;
+    margin-top: -5px;
   }
 
   .container-row {
@@ -760,7 +761,7 @@ footer p {
 @media screen and (min-width: 1280px) and (orientation: landscape) {
   #central {
     padding-right: 850px;
-    padding-top: 50px;
+    padding-top: 280px;
   }
 
   h2 {
@@ -769,6 +770,7 @@ footer p {
 
   .botao-central {
     font-size: 1rem;
+    margin-top: -5px;
   }
 
   #desktop {
