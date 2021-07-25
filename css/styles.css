@@ -708,6 +708,12 @@ footer p {
   button.botao {
     margin: 7px;
   }
+
+  .logo-login > a > #logo {
+    width: 180px;
+    margin-left: 20px;
+    margin-top: 1rem;
+  }
 }
 
 /*Paisagem*/
@@ -808,6 +814,12 @@ footer p {
     padding-right: 850px;
     padding-top: 180px;
     font-size: 1.5rem;
+  }
+
+  .logo-login > a > #logo {
+    width: 180px;
+    margin-left: 20px;
+    margin-top: 1rem;
   }
 
   h2 {
