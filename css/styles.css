@@ -798,11 +798,7 @@ footer p {
   }
 
   .filme:active,
-  .filme:hover,
-  .botao:active,
-  .botao:hover,
-  .botao-central:active,
-  .botao-central:hover {
+  .filme:hover {
     transform: scale(1.05);
   }
 }
