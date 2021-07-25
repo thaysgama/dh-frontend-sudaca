@@ -579,10 +579,6 @@ footer p {
   h2 {
     margin-top: 70px;
   }
-
-  .filme {
-    font-size: 0.5rem;
-  }
 }
 
 @media screen and (min-width: 481px) and (orientation: portrait) {
@@ -740,6 +736,22 @@ footer p {
     font-size: 0.5rem;
   }
 
+  .filme {
+    font-size: 0.5rem;
+    width: 130px;
+    height: 220px;
+  }
+
+  .container-row {
+    padding: 20px 30px;
+    height: 310px;
+    grid-template-columns: repeat(17, 150px);
+  }
+
+  .footer-art {
+    height: 180px;
+  }
+
   footer {
     height: 15vh;
     line-height: 2px;
@@ -763,16 +775,35 @@ footer p {
     margin-top: -5px;
   }
 
+  .filme {
+    width: 160px;
+    height: 280px;
+  }
+
+  .footer-art {
+    height: 210px;
+    font-size: 0.8rem;
+  }
+
   .container-row {
-    padding: 30px;
-    height: 400px;
-    grid-template-columns: repeat(17, 230px);
+    padding: 80px 60px;
+    height: 450px;
+    grid-template-columns: repeat(17, 200px);
   }
 
   footer {
     height: 8vh;
     line-height: 2px;
     margin: 20px 0;
+  }
+
+  .filme:active,
+  .filme:hover,
+  .botao:active,
+  .botao:hover,
+  .botao-central:active,
+  .botao-central:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -805,9 +836,9 @@ footer p {
     display: none;
   }
 
-  .filme {
-    width: 280px;
-    height: 370px;
+  .footer-art {
+    height: 210px;
+    font-size: 1rem;
   }
 
   .botao {
@@ -822,9 +853,19 @@ footer p {
     width: 300px;
   }
 
+  .filme {
+    width: 230px;
+    height: 350px;
+  }
+
+  .footer-art {
+    height: 240px;
+    font-size: 1rem;
+  }
+
   .container-row {
     padding: 35px;
     height: 500px;
-    grid-template-columns: repeat(17, 320px);
+    grid-template-columns: repeat(17, 300px);
   }
 }
