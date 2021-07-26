@@ -82,7 +82,7 @@ input[type="checkbox"]:checked ~ nav {
   background-color: #f2f2f2cc;
   font-weight: bolder;
   width: 60vw;
-  height: 500px;
+  height: 100%;
   left: -61vw;
   position: absolute;
   transition: all 0.5s;
@@ -186,7 +186,7 @@ h2 {
   background-position-x: center;
   background-repeat: no-repeat;
   color: #ccc;
-  padding-top: 300px;
+  padding-top: 200px;
   padding-left: 20px;
   padding-right: 50px;
   text-align: center;
@@ -565,7 +565,7 @@ footer p {
 
 @media screen and (max-width: 481px) and (orientation: portrait) {
   #central {
-    padding-top: 100px;
+    padding-top: 200px;
   }
 
   #central button {
@@ -583,7 +583,7 @@ footer p {
 
 @media screen and (min-width: 481px) and (orientation: portrait) {
   #central {
-    padding-top: 100px;
+    padding-top: 200px;
     background-image: url("../img/central1.jpg");
     background-position-y: top;
     background-position-x: center;
@@ -611,7 +611,7 @@ footer p {
 
 @media screen and (min-width: 769px) and (orientation: portrait) {
   #central {
-    padding-right: 100px;
+    padding-right: 200px;
     padding-left: 30px;
     padding-top: 380px;
     background-image: url("../img/central2.jpg");
@@ -722,7 +722,10 @@ footer p {
   #central {
     padding-left: 30px;
     padding-right: 180px;
-    padding-top: 30px;
+    padding-top: 200px;
+    background-image: url("../img/central1.jpg");
+    background-position-y: top;
+    background-position-x: center;
   }
 
   .botao-central {
@@ -768,8 +771,11 @@ footer p {
 @media screen and (min-width: 769px) and (orientation: landscape) {
   #central {
     padding-right: 180px;
-    padding-top: 70px;
+    padding-top: 200px;
     padding-left: 30px;
+    background-image: url("../img/central2.jpg");
+    background-position-y: top;
+    background-position-x: center;
   }
 
   h2 {
@@ -812,8 +818,11 @@ footer p {
 @media screen and (min-width: 1280px) and (orientation: landscape) {
   #central {
     padding-right: 850px;
-    padding-top: 180px;
+    padding-top: 100px;
     font-size: 1.5rem;
+    background-image: url("../img/central3.jpg");
+    background-position-y: top;
+    background-position-x: center;
   }
 
   .logo-login > a > #logo {
